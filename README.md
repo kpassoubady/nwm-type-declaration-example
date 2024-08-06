@@ -1,6 +1,8 @@
 # nwm-type-declaration-example
 Type Declaration Example
 
+The below example shows how to use mjs and mts files.
+
 # Creating .d.ts file
 
 
