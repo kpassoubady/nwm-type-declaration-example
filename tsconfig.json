@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "ESNext",
+    "module": "ES6",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -16,7 +16,6 @@
       "*": ["node_modules/*"]
     }
   },
-  "type": "module",
   "include": ["./src/**/*.ts", "./test/**/*.ts", "src/math.d.mts"],
   "exclude": ["node_modules", "**/*.spec.ts"],
 

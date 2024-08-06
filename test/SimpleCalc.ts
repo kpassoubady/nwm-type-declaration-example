@@ -7,7 +7,9 @@ The code imports the register function from node:module and pathToFileURL from n
 It then calls register("ts-node/esm", pathToFileURL("./")) to register the ts-node/esm loader.
 */
 // node --trace-warnings --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));' ./test/simpleCalc.ts
-
+// node --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));' ./test/simpleCalc.ts
+// node --loader ts-node/esm ./test/simpleCalc.ts --trace-warnings
+// node --experimental-loader ts-node/esm ./test/simpleCalc.ts
 
 let x = 10;
 let y = 2;
@@ -18,7 +20,7 @@ const diff = math.subtract(x, y); // TS enforces type checking
 console.log("add = %d", plus);
 console.log("diff = %d", diff);
 
-const concat = math.add("Hello", "Kangs"); 
+// const concat = math.add("Hello", "Kangs"); 
 // Argument of type 'string' is not assignable to parameter of type 'number'.ts(2345)
-const product = math.multiply(true, false); 
+// const product = math.multiply(true, false); 
 // Argument of type 'boolean' is not assignable to parameter of type 'number'.ts(2345)

@@ -7,6 +7,7 @@
   "type": "module",
   "experimentalModules": true,
   "scripts": {
+    "test": "node --trace-warnings --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' ./test/simpleCalc.ts"
   },
   "keywords": [
     "TypeScript",

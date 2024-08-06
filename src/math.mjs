@@ -1,6 +1,6 @@
 // math.mjs
 
-// npx -p typescript tsc src/*.mjs --declaration --allowJs --emitDeclarationOnly --outDir src
+// npx -p typescript tsc src/*.mjs --declaration --allowJs --emitDeclarationOnly --outDir types
 
 export function add(a, b) {
   return a + b;
